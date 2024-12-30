@@ -7,7 +7,7 @@ Id:CTO8FEV
 
 Domain:Full Stack Development
 
-Mentor:
+Mentor:Sravani
 
 Overview of the project:
 Project:Personal portfolio
