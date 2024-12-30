@@ -1,0 +1,156 @@
+body {
+    background-color: #1a1a1d;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+  }
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90px;
+    background-color: #697565;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  nav ul li a:hover {
+    text-decoration: none;
+    color: rgb(174, 174, 245);
+  }
+  nav ul li {
+    list-style: none;
+    margin: 0 23px;
+  }
+  .left {
+    font-size: 2rem;
+  }
+  .right{
+    font-size:20px ;
+  }
+  .btn {
+    color: rgb(21, 117, 158);
+    background-color: white;
+    border-color: rgb(21, 117, 158);
+    border-radius: 4px;
+    height: 55px;
+    width: 175px;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    border-style: solid;
+    transition: box-shadow 0.15s;
+    transition: background-color 0.15s;
+  }
+  .btn:hover {
+    background-color: rgb(13, 100, 137);
+    color: white;
+    
+  }
+  #firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 130px 0;
+    align-items: center;
+  
+  }
+  
+  .leftsection {
+    font-size: 3rem;
+  }
+  .rightsection img {
+    width: 80%;
+  }
+  .purple {
+    color: #6d60bb;
+  }
+  #element {
+    color: #6d60bb;
+  }
+  #secondSection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+  }
+  #secondSection h1{
+    font-size: 1.9rem;
+  }
+  main hr{
+    border:0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 60px  84px;
+  }
+  .textgrey{
+    color: grey;
+  }
+  #secondSection .box ul li{
+    line-height: 45px;
+    margin: auto;
+    margin-top: 10px;
+  }
+  #form h1{
+    margin-left:150px;
+  }
+  
+  
+  .contact-form {
+    background: #1a1a1d;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    align-items: center;
+    margin-left: 100px;
+  }
+  .contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  .contact-form input,
+      .contact-form textarea,
+      .contact-form button {
+        width: 80%;
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: #1a1a1d;
+      }
+      .contact-form textarea {
+        resize: vertical;
+        height: 120px;
+      }
+      .contact-form button {
+        background-color: rgba(174, 174, 245,0.8);
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s;
+      }
+      .contact-form button:hover {
+        background-color: black;
+      }
+      .success-message {
+        display: none;
+        margin-top: 10px;
+        color: white
+      }

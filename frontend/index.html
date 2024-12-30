@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="left">Vijay's Portfolio</div>
+          <div class="right">
+            <ul>
+              <li><a href="#firstSection">Home</a></li>
+              <li><a href="#secondSection">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#form">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      
+    <main>
+        <section id="firstSection">
+            <div class="leftsection">
+              Hi, My name is <span class="purple">VIJAY</span>
+              <div>and I am a passionate</div>
+    
+              <span id="element"></span><br />
+              <button class="btn">Download resume</button>
+            </div>
+            <div class="rightsection">
+              <img src="pic.png" alt="" />
+            </div>
+          </section>
+          <hr/>
+        
+        <section id="secondSection">
+            <span class="textgrey">What I have done so far</span>
+            <h1>About me</h1>
+            <div class="box">
+              <ul>
+                <li>
+                  <i
+                    >I'm a passionate Full Stack and Web Developer with a strong
+                    background in designing, building, and optimizing web
+                    applications that deliver seamless user experiences. With
+                    expertise in both front-end and back-end technologies, I bridge
+                    the gap between intuitive design and robust functionality.</i
+                  >
+                </li>
+                <li>
+                  <i
+                    >I specialize in working with JavaScript, React, Node.js,
+                    Python. Ensuring scalable, efficient, and secure solutions.
+                    Whether it's crafting responsive interfaces, developing RESTful
+                    APIs, or deploying applications to the cloud, I thrive on
+                    creating solutions that solve real-world problems.</i
+                  >
+                </li>
+                <li>
+                  <i
+                    >I'm always eager to tackle new challenges, learn, and innovate.
+                    Let's collaborate and create something extraordinary!
+                  </i>
+                </li>
+                <li><i>Let's build something amazing together! </i></li>
+              </ul>
+            </div>
+          </section>
+          <hr/>
+        <section id="projects">
+            <h2>Projects</h2>           
+                <div id="project-list"></div>         
+        </section>
+        <hr/>
+        <section id="blogs">
+            <h2>Blogs</h2>          
+                <div id="blog-list"></div>          
+        </section>
+        <hr/>
+        <footer>
+            <div id="form">
+              <h1>Contact me</h1>
+              <form class="contact-form" id="contactForm">
+                
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message" required></textarea>
+                <button type="submit">Send Message</button>
+                <p class="success-message" id="successMessage">Thank you for your message! I'll get back to you soon.</p>
+              </form>
+             
+          </footer>
+      
+          <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+          <script>
+            var typed = new Typed("#element", {
+              strings: ["Web developer!", "Full stack developer!", "Web Designer!"],
+              typeSpeed: 50,
+            });
+          </script>
+          <script>
+             
+          const form = document.getElementById('contactForm');
+          const successMessage = document.getElementById('successMessage');
+      
+          form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            successMessage.style.display = 'block';
+            form.reset();
+          });
+        
+          </script>
+    <script src="script.js"></script>
+</body>
+</html>
